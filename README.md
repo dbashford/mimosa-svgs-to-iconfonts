@@ -1,4 +1,4 @@
-mimosa-sprite
+mimosa-svgs-to-iconfonts
 ===========
 ## Overview
 
