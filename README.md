@@ -14,7 +14,9 @@ This module will process the `.svg` contents of specific folders and create `.sv
 
 The CSS font classes are named for the name of the original `.svg` file.
 
-So, if you have a folder `fonts/svgs/login` (see default config below), and inside that folder you have a `submit.svg` and a `cancel.svg`, this module will those two `.svg`s and create 4 files, `font-login.svg|woff|ttf|eot`, and will create a `font-login.css`.  Inside the `.css` will be icon styles named for the original `.svg`, `.icon-submit` and `.icon-login`.
+So, if you have a folder `fonts/svgs/login` (see default config below), and inside that folder you have a `submit.svg` and a `cancel.svg`, this module will those two `.svg`s and create 4 files, `login.svg|woff|ttf|eot`, and will create a `stylesheet.css`.  Inside the `.css` will be icon styles named for the original `.svg`, `.submit` and `.login`.
+
+If you wish your styles to be `.icon-submit`, simple change the name of the original `.svg` file.
 
 ## Default Config
 
