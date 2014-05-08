@@ -8,13 +8,15 @@ Add `'svgs-to-iconfonts'` to your list of modules.  That's all!  Mimosa will ins
 
 Once this module has been added to your project, just execute `mimosa iconfonts` to generate your fonts.  This module comes with some default config (see below) and if your project matches that config, you won't have any other work to do.
 
+Check this module out in the [example application](https://github.com/dbashford/MimosaIconFontsExample).
+
 ## Functionality
 
 This module will process the `.svg` contents of specific folders and create `.svg`, `.woff`, `.ttf` and `.eot` font files.  It will also generate a matching `.css` file.
 
 The CSS font classes are named for the name of the original `.svg` file.
 
-So, if you have a folder `fonts/svgs/login` (see default config below), and inside that folder you have a `submit.svg` and a `cancel.svg`, this module will those two `.svg`s and create 4 files, `login.svg|woff|ttf|eot`, and will create a `stylesheet.css`.  Inside the `.css` will be icon styles named for the original `.svg`, `.submit` and `.login`.
+So, if you have a folder `fonts/svgs/login` (see default config below), and inside that folder you have a `submit.svg` and a `cancel.svg`, this module will process those two `.svg`s and create 4 files, `login.svg|woff|ttf|eot`, and will create a `stylesheet.css`.  Inside the `.css` will be icon styles named for the original `.svg`, `.submit` and `.login`.
 
 If you wish your styles to be `.icon-submit`, simple change the name of the original `.svg` file.
 
