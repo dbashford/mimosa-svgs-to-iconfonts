@@ -2,13 +2,17 @@
 
 var config = require( "./config" );
 
-var registerCommand = function ( program, retrieveConfig ) {
+var registerCommand = function ( program, logger, retrieveConfig ) {
   program
     .command( "iconfonts" )
     .option("-D, --mdebug", "run in debug mode")
     .description( "Generate icon fonts from svgs" )
     .action( function( opts ){
-      retrieveConfig( false, !!opts.mdebug, function( mimosaConfig ) {
+      var retrieveConfigOpts = {
+        buildFirst: false,
+        mdebug: !!opts.mdebug
+      };
+      retrieveConfig( retrieveConfigOpts, function( mimosaConfig ) {
         var generateIconFonts = require( "./command" );
         generateIconFonts( mimosaConfig );
       });
@@ -18,6 +22,5 @@ var registerCommand = function ( program, retrieveConfig ) {
 module.exports = {
   registerCommand: registerCommand,
   defaults:        config.defaults,
-  placeholder:     config.placeholder,
   validate:        config.validate
 };
