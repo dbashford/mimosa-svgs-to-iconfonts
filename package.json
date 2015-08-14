@@ -1,6 +1,6 @@
 {
   "name": "mimosa-svgs-to-iconfonts",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "homepage": "https://github.com/dbashford/mimosa-svgs-to-iconfonts",
   "author": "David Bashford",
   "description": "A module for Mimosa to turn svgs into font files",
